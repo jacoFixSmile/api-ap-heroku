@@ -10,7 +10,7 @@ app.use(
 );
 app.options('*', cors());
 
-app.get('/', (req, res) => res.send('Workkkkkkk plzzzzz.'));
+app.get('/', (req, res) => res.send('Ittttt Workkkkkkk plzzzzz.'));
 
 app.listen(process.env.PORT || 3000, function() {
     console.log('server running on port 3000', '');
