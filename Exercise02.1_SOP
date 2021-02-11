@@ -1,0 +1,11 @@
+<!DOCTYPEhtml>
+    <html>
+        <body>
+            <h2>SOPexample2</h2>
+            <iframe id="telenet"src="https://www.telenet.be">
+            </iframe>
+                <script>
+window.onload=function(){setTimeout(function(){document.getElementById('telenet').contentWindow.innerHTML;},5000)};
+                </script>
+            </body>
+</html>
