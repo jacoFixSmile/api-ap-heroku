@@ -1,0 +1,19 @@
+<!DOCTYPEhtml>
+  <html>
+    <body>
+    <h2>UsingtheXMLHttpRequestObject</h2>
+    <divid="demo">
+    <buttontype="button"onclick="loadXMLDoc()">GetContent</button>
+    </div>
+    <script>
+    functionloadXMLDoc(){
+    var xhttp=newXMLHttpRequest();
+    xhttp.onreadystatechange=function(){
+      if(this.readyState==4&&this.status==200){
+      document.getElementById("demo").innerHTML=this.responseText;}};
+      xhttp.open("GET","REPLACE_WITH_LINK_TO_YOUR_API",true);
+      xhttp.send();
+      }
+    </script>
+    </body>
+   </html>
